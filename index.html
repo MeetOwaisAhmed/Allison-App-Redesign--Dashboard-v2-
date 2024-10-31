@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allison App</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <!--Sidebar-->
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo"><img src="/images/logo.svg"></div>
+            <nav>
+                <ul>
+                    <li><img src="/images/p1.svg"> Overview</li>
+                    <li class="active"><img src="/images/p2.svg"> Customer</li>
+                    <li><img src="/images/p3.svg"> Case Management</li>
+                    <li><img src="/images/p4.svg"> Biling</li>
+                </ul>
+            </nav>
+            <div class="more_section">
+                <h3>MORE</h3>
+                <ul>
+                    <li><img src="/images/p5.svg"> Activity Log</li>
+                    <li><img src="/images/p6.svg"> Settings</li>
+                </ul>
+            </div>
+            <div class="dark_mode">
+                <img src="/images/dark.svg"> Dark Mode
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="line"></div>
+            <div class="user_profile">
+                <img src="/images/Avatar.svg" alt="avatar">
+                <div class="user_info">
+                    <h4>John Perez</h4>
+                    <p>john.p@gmail.com</p>
+                </div>
+            </div>
+        </aside>
+
+        <!--Main Content-->
+        <main class="main_content">
+            <header>
+                <h1>Overview</h1>
+                <div class="header_actions">
+                    <button class="icon_button">
+                        <img src="/images/bell.svg" alt="Notifications">
+                    </button>
+                    <div class="dropdown">
+                        <button class="manualverif">
+                            <img src="/images/buttonicon.svg">
+                            Manual Verification
+                        </button>
+                    </div>
+                    
+                </div>
+            </header>
+            <div class="line-header"></div>
+            
+            <section class="recent_customers">
+                <div class="rc">
+                     <h2>Recent Customers <span class="count">8416</span></h2>
+                    <div class="filter_buttons">
+                        <button class="active">All</button>
+                        <button>Low Risk</button>
+                        <button>High Risk</button>
+                    </div>
+                    <div class="search_bar">
+                        <img src="/images/search.svg">
+                        <input type="text" placeholder="Search..." >
+                        <button class="command-button">&#8984; 1</button>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Customer ID</th>
+                            <th>Risk Level</th>
+                            <th>Last Review Date</th>
+                            <th>AML/OFAC Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                  <img src="/images/avator1.svg" alt="Henry Martinez">
+                                  Henry Martinez
+                                </div>
+                            </td>
+                            <td>BAN002034</td>
+                            <td><span class="risk_level low"><img src="/images/Low Risk.svg">Low</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status passed"><img src="/images/greentick.svg">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                    <img src="/images/avator2.svg" alt="Henry Johnson">
+                                    Henry Johnson
+                                </div>
+                            </td>
+                            <td>BAN002035</td>
+                            <td><span class="risk_level low"><img src="/images/Low Risk.svg">Low</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status failed"><img src="/images/error.svg">Failed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                    <img src="/images/avator3.svg" alt="Marium Ibrahim">
+                                     Marium Ibrahim
+                                </div>
+                            </td>
+                            <td>BAN002036</td>
+                            <td><span class="risk_level low"><img src="/images/Low Risk.svg">Low</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status passed"><img src="/images/greentick.svg">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                    <img src="/images/avator4.svg" alt="James Brown">
+                                    James Brown
+                                </div>
+                            </td>
+                            <td>BAN002037</td>
+                            <td><span class="risk_level medium"><img src="/images/Medium Risk.svg">Medium</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status passed"><img src="/images/greentick.svg">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                    <img src="/images/avator5.svg" alt="Mia Thompson">
+                                     Mia Thompson
+                                </div>
+                            </td>
+                            <td>BAN002038</td>
+                            <td><span class="risk_level high"><img src="/images/High Risk.svg">High</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status passed"><img src="/images/greentick.svg">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                    <img src="/images/avator6.svg" alt="John Doe">
+                                    John Doe
+                                </div>
+                            </td>
+                            <td>BAN002039</td>
+                            <td><span class="risk_level high"><img src="/images/High Risk.svg">High</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status passed"><img src="/images/greentick.svg">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                    <img src="/images/avator7.svg" alt="Jane Moore">
+                                    Jane Moore
+                                </div>
+                            </td>
+                            <td>BAN002040</td>
+                            <td><span class="risk_level low"><img src="/images/Low Risk.svg">low</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status passed"><img src="/images/greentick.svg">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                    <img src="/images/avator8.svg" alt="Ayesha Ali">
+                                    Ayesha Ali
+                                </div>
+                            </td>
+                            <td>BAN002041</td>
+                            <td><span class="risk_level high"><img src="/images/High Risk.svg">High</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status passed"><img src="/images/greentick.svg">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                    <img src="/images/avator9.svg" alt="William Sanchez">
+                                    William Sanchez
+                                </div>
+                            </td>
+                            <td>BAN002042</td>
+                            <td><span class="risk_level medium"><img src="/images/Medium Risk.svg">Medium</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status passed"><img src="/images/greentick.svg">Passed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user_cell">
+                                <div class="user_info">
+                                    <img src="/images/avator10.svg" alt=" John Parez">
+                                    John Parez
+                                </div>
+                            </td>
+                            <td>BAN002043</td>
+                            <td><span class="risk_level medium"><img src="/images/Medium Risk.svg">Medium</span></td>
+                            <td>08-15-2024</td>
+                            <td><span class="status passed"><img src="/images/greentick.svg">Passed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination-container">
+                    <div class="pagination-info">Page 2 of 16</div>
+                    <div class="pagination">
+                        <button class="pagination-button">&laquo;</button>
+                        <button class="pagination-button">&lsaquo;</button>
+                        <button class="pagination-button">1</button>
+                        <button class="pagination-button active">2</button>
+                        <button class="pagination-button">3</button>
+                        <button class="pagination-button">4</button>
+                        <button class="pagination-button">5</button>
+                        <span class="pagination-ellipsis">...</span>
+                        <button class="pagination-button">16</button>
+                        <button class="pagination-button">&rsaquo;</button>
+                        <button class="pagination-button">&raquo;</button>
+                    </div>
+                    <div class="pagination-dropdown">
+                        <select>
+                            <option>Page 1</option>
+                            <option>Page 2</option>
+                            <option>Page 3</option>
+                        </select>
+                    </div>
+                </div>           
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
